@@ -127,7 +127,7 @@ const TaskModal = ({
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
 
       {/* Panel */}
-      
+
       <div className="relative w-full max-w-xl rounded-[2rem] bg-white shadow-2xl border border-outline-variant/20 overflow-hidden">
         <div className="px-8 pt-7 pb-5 border-b border-surface-container-highest">
           <div className="flex items-start justify-between gap-4">
@@ -232,26 +232,29 @@ const TaskModal = ({
           </div>
 
           <div className="pt-2 flex items-center justify-end gap-3">
-          <button
-            type="button"
-            onClick={async () => {
-              if (window.confirm("Are you sure you want to delete this task?")) {
-                setSubmitting(true);
-                try {
-                  await axiosInstance.delete(`/api/tasks/${task._id}`);
-                  await onUpdated?.(); // Refresh the list
-                  onClose?.(); // Close the modal
-                } catch (err) {
-                  setError("Failed to delete task.");
-                } finally {
-                  setSubmitting(false);
+          {mode === 'update' && (
+            <button
+              type="button"
+              onClick={async () => {
+                if (window.confirm("Are you sure you want to delete this task?")) {
+                  setSubmitting(true);
+                  try {
+                    await axiosInstance.delete(`/api/tasks/${task._id}`);
+                    await onUpdated?.(); // Refresh the list
+                    onClose?.(); // Close the modal
+                  } catch (err) {
+                    setError("Failed to delete task.");
+                  } finally {
+                    setSubmitting(false);
+                  }
                 }
-              }
-            }}
-              className="px-5 py-3 rounded-full text-error hover:bg-error/10 transition-colors font-body font-semibold flex items-center gap-2">
+              }}
+              className="px-5 py-3 rounded-full text-error hover:bg-error/10 transition-colors font-body font-semibold flex items-center gap-2"
+            >
               <span className="material-symbols-outlined text-lg">delete</span>
               Delete Task
             </button>
+          )}
             <button
               type="button"
               onClick={onClose}
