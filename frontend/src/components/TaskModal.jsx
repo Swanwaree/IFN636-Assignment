@@ -127,6 +127,7 @@ const TaskModal = ({
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
 
       {/* Panel */}
+      
       <div className="relative w-full max-w-xl rounded-[2rem] bg-white shadow-2xl border border-outline-variant/20 overflow-hidden">
         <div className="px-8 pt-7 pb-5 border-b border-surface-container-highest">
           <div className="flex items-start justify-between gap-4">
