@@ -70,7 +70,7 @@ const Tasks = () => {
       <header className="mb-12 flex flex-col md:flex-row md:justify-between md:items-end gap-6">
         <div>
           <h1 className="text-5xl font-extrabold tracking-tight text-on-surface mb-2 font-headline">Tasks</h1>
-          <p className="text-on-surface-variant font-body">Manage your daily sanctuary of productivity.</p>
+          <p className="text-on-surface-variant font-body">Manage your tasks and archive yourgoals.</p>
         </div>
 
         <div className="flex gap-4">
