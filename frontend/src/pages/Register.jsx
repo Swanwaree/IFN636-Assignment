@@ -93,10 +93,10 @@ const Register = () => {
           <div className="hidden md:flex flex-col justify-between h-full min-h-96 bg-gradient-to-br from-primary to-secondary rounded-3xl p-8 md:p-10 text-white shadow-2xl">
             <div>
               <h1 className="font-headline text-5xl font-bold mb-6">
-                Digital Sanctuary
+                Goal Tracking King
               </h1>
               <p className="font-body text-lg leading-relaxed">
-                Reclaim your focus in a workspace designed for clarity and peace.
+                Let's make great happen.
               </p>
             </div>
 
