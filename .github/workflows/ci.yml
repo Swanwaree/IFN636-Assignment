@@ -12,7 +12,7 @@ jobs:
   build-and-test:
     name: Build and Run Tests
     # Use 'ubuntu-latest' for standard GitHub Actions or 'self-hosted' if using your own EC2
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout Code
