@@ -48,10 +48,10 @@ const Login = () => {
           <div className="hidden md:flex flex-col justify-center space-y-8 p-8">
             <div>
               <h1 className="font-headline text-5xl font-bold text-primary mb-4">
-                Digital Sanctuary
+                Goal Tracking King
               </h1>
               <p className="font-body text-lg text-on-surface-variant leading-relaxed">
-                Rediscover deep work in a space designed for clarity, focus, and mental well-being.
+                Let's make great happen.
               </p>
             </div>
 
