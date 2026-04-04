@@ -16,9 +16,4 @@ In this assignment you will complete the following tasks:
 * **Project report**
 
  
----
-
-**GitHub link of the starter project: **[https://github.com/nahaQUT/sampleapp_IFQ636.git](https://github.com/nahaQUT/sampleapp_IFQ636.git)
-
----
 
