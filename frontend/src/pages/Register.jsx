@@ -103,7 +103,7 @@ const Register = () => {
             {/* 3D Illustration */}
             <div className="relative h-64 md:h-80 flex items-center justify-center">
               <svg
-                viewBox="0 0 300 300"
+                viewBox="0 -100 300 400"
                 className="w-full h-full"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -123,46 +123,18 @@ const Register = () => {
                   </radialGradient>
                 </defs>
 
-                {/* Mountain/Ground */}
-                <ellipse cx="150" cy="220" rx="120" ry="40" fill="url(#ground)" filter="drop-shadow(0 10px 30px rgba(0,0,0,0.2))" />
-
-                {/* Plants */}
-                <g>
-                  <ellipse cx="100" cy="200" rx="8" ry="25" fill="#10b981" opacity="0.7" transform="rotate(-20 100 200)" />
-                  <ellipse cx="200" cy="190" rx="8" ry="25" fill="#059669" opacity="0.7" transform="rotate(20 200 190)" />
-                  <ellipse cx="120" cy="210" rx="6" ry="15" fill="#34d399" opacity="0.8" transform="rotate(-10 120 210)" />
-                  <ellipse cx="180" cy="210" rx="6" ry="15" fill="#34d399" opacity="0.8" transform="rotate(10 180 210)" />
+                <g>                  
+                  <image 
+                    href="/logo512px.png" 
+                    x="40"   /* Adjust this to move the image left/right */
+                    y="-100"   /* Adjust this to move the image up/down */
+                    height="250" 
+                    width="250" 
+                  />
                 </g>
-
-                {/* Person Body */}
-                <ellipse cx="150" cy="160" rx="22" ry="35" fill="url(#person-body)" filter="drop-shadow(0 15px 35px rgba(0,0,0,0.15))" />
-
-                {/* Person Head */}
-                <circle cx="150" cy="110" r="20" fill="url(#person-head)" filter="drop-shadow(0 15px 35px rgba(0,0,0,0.15))" />
-
-                {/* Eyes */}
-                <circle cx="143" cy="107" r="2.5" fill="#333" />
-                <circle cx="157" cy="107" r="2.5" fill="#333" />
-
-                {/* Smile */}
-                <path d="M 143 112 Q 150 115 157 112" stroke="#333" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-
-                {/* Flowers */}
-                <g>
-                  <circle cx="75" cy="140" r="3" fill="#f15ba4" opacity="0.8" />
-                  <circle cx="75" cy="130" r="2.5" fill="#f15ba4" opacity="0.9" />
-                  <circle cx="225" cy="150" r="3" fill="#f15ba4" opacity="0.7" />
-                  <circle cx="230" cy="140" r="2.5" fill="#fb7185" opacity="0.8" />
-                </g>
-
-                {/* Highlight on head */}
-                <circle cx="142" cy="95" r="8" fill="white" opacity="0.3" />
               </svg>
             </div>
 
-            <div className="text-sm opacity-90 font-body">
-              The Lumina Productivity Standard
-            </div>
           </div>
 
           {/* Right Side - Register Form */}
