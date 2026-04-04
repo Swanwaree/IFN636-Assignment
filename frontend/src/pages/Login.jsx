@@ -91,15 +91,15 @@ const Login = () => {
                   </radialGradient>
                 </defs>
 
-                {/* Spheres */}
-                <circle cx="120" cy="130" r="60" fill="url(#sphere1)" filter="drop-shadow(0 20px 40px rgba(0,0,0,0.15))" />
-                <circle cx="180" cy="100" r="50" fill="url(#sphere2)" filter="drop-shadow(0 20px 40px rgba(0,0,0,0.15))" />
-                <circle cx="150" cy="200" r="45" fill="url(#sphere3)" filter="drop-shadow(0 20px 40px rgba(0,0,0,0.15))" />
-
-                {/* Highlights */}
-                <circle cx="110" cy="110" r="15" fill="white" opacity="0.4" />
-                <circle cx="170" cy="80" r="12" fill="white" opacity="0.4" />
-                <circle cx="140" cy="190" r="10" fill="white" opacity="0.4" />
+                <g>                  
+                  <image 
+                    href="/logo512px.png" 
+                    x="75"   /* Adjust this to move the image left/right */
+                    y="75"   /* Adjust this to move the image up/down */
+                    height="150" 
+                    width="150" 
+                  />
+                </g>
               </svg>
             </div>
           </div>
